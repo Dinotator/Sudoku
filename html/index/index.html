@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <script type="text/javascript" src="../js/index.js"></script>
+    <title>Sudoku Solver</title>
+</head>
+
+<body>
+    <br>
+    <h1>Sudoku Solver</h1>
+    <br>
+    <table cellspacing="1" cellpadding="1">
+        <tr>
+            <td class="xx"><input id="1" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="2" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="3" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="4" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="5" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="6" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="7" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="8" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="9" class="celda" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td class="xx"><input id="10" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="11" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="12" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="13" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="14" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="15" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="16" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="17" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="18" class="celda" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td class="xx"><input id="19" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="20" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="21" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="22" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="23" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="24" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="25" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="26" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="27" class="celda" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td class="top"><input id="28" class="celda" maxlength="1"></td>
+            <td class="top"><input id="29" class="celda" maxlength="1"></td>
+            <td class="topr"><input id="30" class="celda" maxlength="1"></td>
+            <td class="top"><input id="31" class="celda" maxlength="1"></td>
+            <td class="top"><input id="32" class="celda" maxlength="1"></td>
+            <td class="topr"><input id="33" class="celda" maxlength="1"></td>
+            <td class="top"><input id="34" class="celda" maxlength="1"></td>
+            <td class="top"><input id="35" class="celda" maxlength="1"></td>
+            <td class="top"><input id="36" class="celda" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td class="xx"><input id="37" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="38" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="39" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="40" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="41" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="42" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="43" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="44" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="45" class="celda" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td class="xx"><input id="46" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="47" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="48" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="49" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="50" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="51" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="52" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="53" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="54" class="celda" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td class="top"><input id="55" class="celda" maxlength="1"></td>
+            <td class="top"><input id="56" class="celda" maxlength="1"></td>
+            <td class="topr"><input id="57" class="celda" maxlength="1"></td>
+            <td class="top"><input id="58" class="celda" maxlength="1"></td>
+            <td class="top"><input id="59" class="celda" maxlength="1"></td>
+            <td class="topr"><input id="60" class="celda" maxlength="1"></td>
+            <td class="top"><input id="61" class="celda" maxlength="1"></td>
+            <td class="top"><input id="52" class="celda" maxlength="1"></td>
+            <td class="top"><input id="63" class="celda" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td class="xx"><input id="64" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="65" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="66" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="67" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="68" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="69" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="70" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="71" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="72" class="celda" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td class="xx"><input id="73" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="74" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="75" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="76" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="77" class="celda" maxlength="1"></td>
+            <td class="rr"><input id="78" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="79" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="80" class="celda" maxlength="1"></td>
+            <td class="xx"><input id="81" class="celda" maxlength="1"></td>
+        </tr>
+    </table>
+    <br>
+    
+    <div class="botones">
+    <button type="button" onclick="limpiar()">Limpiar</button> 
+    <button type="button" onclick="getRespuesta()">Mostrar</button> 
+    </div>
+    
+</body>
+
+</html>
